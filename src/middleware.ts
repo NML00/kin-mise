@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 
 export const middleware = (request: NextRequest) => {
-  console.log(request);
+  console.log(request.cookies);
 };
 export const config = {
   matcher: [

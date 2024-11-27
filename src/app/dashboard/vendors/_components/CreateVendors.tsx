@@ -1,5 +1,33 @@
+"use client";
+
+import { Button, Form, FormProps, Input } from "antd";
+import FormItem from "antd/es/form/FormItem";
+
 export default function CreateVendors() {
-    return (
-        <div>HEllo</div>
-    )
+  type CreateVendorType = {
+    vendorName: string;
+    vendorAddress: string;
+  };
+  const handleCreate: FormProps<CreateVendorType>["onFinish"] = async () => {};
+  return (
+    <div className="py-8">
+      <Form
+        onFinish={handleCreate}
+        name="create-vendor"
+        className=" rounded max-w-[600px] bg-neutral-100 p-4"
+        layout="vertical"
+      >
+        <div className="text-lg font-semibold">Create Vendor</div>
+        <FormItem label="Vendor Name" rules={[{ required: true }]}>
+          <Input></Input>
+        </FormItem>
+        <FormItem label="Vendor Address" rules={[{ required: true }]}>
+          <Input></Input>
+        </FormItem>
+        <FormItem>
+          <Button htmlType="submit">Create</Button>
+        </FormItem>
+      </Form>
+    </div>
+  );
 }
