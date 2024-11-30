@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Table, TableProps } from "antd";
 
@@ -7,7 +7,8 @@ export default function VendorsList() {
     vendorName: string;
     vendorAddress: string;
     createdAt: string;
-    id: string;
+    updatedAt: string;
+    id: number;
   };
   const columns: TableProps<VendorType>["columns"] = [
     {
@@ -32,7 +33,15 @@ export default function VendorsList() {
       render: (_, { createdAt }) => <>{new Date(createdAt).toDateString()}</>,
     },
   ];
-  const data: VendorType[] = [];
+  const data: VendorType[] = [
+    {
+      id: 6,
+      vendorName: "Tan Thanh Danh",
+      vendorAddress: "111 An Duong Vuong",
+      createdAt: "2024-09-23T16:21:39.834Z",
+      updatedAt: "2024-09-23T16:21:39.834Z",
+    },
+  ];
   return (
     <Table scroll={{ x: 600 }} columns={columns} dataSource={data}></Table>
   );

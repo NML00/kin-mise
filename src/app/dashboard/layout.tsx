@@ -12,7 +12,7 @@ export default function DashboardLayout({
   return (
     <div className="pt-16 lg:pt-0 lg:flex min-h-[100vh]">
       <div
-        className={`fixed top-0 lg:top-auto lg:relative basis-[280px] shrink-0 bg-slate-800 transition ${
+        className={`fixed top-0 lg:top-auto lg:relative basis-[280px] shrink-0 bg-slate-800 transition z-10 ${
           menu ? "" : "-translate-x-full lg:translate-x-0"
         }`}
       >

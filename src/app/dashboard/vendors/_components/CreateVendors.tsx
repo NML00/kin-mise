@@ -11,23 +11,25 @@ export default function CreateVendors() {
   const handleCreate: FormProps<CreateVendorType>["onFinish"] = async () => {};
   return (
     <div className="py-8">
-      <Form
-        onFinish={handleCreate}
-        name="create-vendor"
-        className=" rounded max-w-[600px] bg-neutral-100 p-4"
-        layout="vertical"
-      >
-        <div className="text-lg font-semibold">Create Vendor</div>
-        <FormItem label="Vendor Name" rules={[{ required: true }]}>
-          <Input></Input>
-        </FormItem>
-        <FormItem label="Vendor Address" rules={[{ required: true }]}>
-          <Input></Input>
-        </FormItem>
-        <FormItem>
-          <Button htmlType="submit">Create</Button>
-        </FormItem>
-      </Form>
+      <div className="rounded max-w-[600px] bg-neutral-100 p-4">
+        <Form
+          onFinish={handleCreate}
+          name="create-vendor"
+          className=" "
+          layout="vertical"
+        >
+          <div className="text-lg font-semibold">Create Vendor</div>
+          <FormItem label="Vendor Name" rules={[{ required: true }]}>
+            <Input></Input>
+          </FormItem>
+          <FormItem label="Vendor Address" rules={[{ required: true }]}>
+            <Input></Input>
+          </FormItem>
+          <FormItem>
+            <Button htmlType="submit">Create</Button>
+          </FormItem>
+        </Form>
+      </div>
     </div>
   );
 }
