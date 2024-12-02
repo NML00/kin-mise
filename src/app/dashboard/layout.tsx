@@ -12,7 +12,7 @@ export default function DashboardLayout({
   return (
     <div className="pt-16 lg:pt-0 lg:flex min-h-[100vh]">
       <div
-        className={`fixed top-0 lg:top-auto lg:relative basis-[280px] shrink-0 bg-slate-800 transition z-10 ${
+        className={`fixed top-0 lg:top-auto lg:relative basis-[280px] shrink-0 bg-slate-200 transition z-10 ${
           menu ? "" : "-translate-x-full lg:translate-x-0"
         }`}
       >
@@ -21,7 +21,7 @@ export default function DashboardLayout({
           onClick={() => {
             setMenu(!menu);
           }}
-          className="lg:hidden p-4 rounded-r-full absolute left-full top-2 bg-slate-800"
+          className="lg:hidden p-4 rounded-r-full absolute left-full top-2 bg-slate-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

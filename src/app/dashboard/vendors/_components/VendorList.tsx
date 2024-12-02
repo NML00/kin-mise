@@ -32,6 +32,11 @@ export default function VendorsList() {
       key: "createdAt",
       render: (_, { createdAt }) => <>{new Date(createdAt).toDateString()}</>,
     },
+    {
+      title: "Action",
+      key: "action",
+      render: (_, item) => <>Hello</>,
+    },
   ];
   const data: VendorType[] = [
     {
