@@ -1,3 +1,9 @@
 export default function UsersPage() {
-    return ('Hello users')
+    return (
+        <div>
+            <div className="text-2xl font-bold">
+                Users
+            </div>
+        </div>
+    )
 }

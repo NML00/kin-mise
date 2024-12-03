@@ -1,3 +1,9 @@
 export default function StaffsPage() {
-    return ('Hello Staffs')
+    return (
+        <div>
+            <div className="text-2xl font-bold">
+                Staffs
+            </div>
+        </div>
+    )
 }

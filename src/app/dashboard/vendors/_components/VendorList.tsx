@@ -35,7 +35,7 @@ export default function VendorsList() {
     {
       title: "Action",
       key: "action",
-      render: (_, item) => <>Hello</>,
+      render: (_, item) => <></>,
     },
   ];
   const data: VendorType[] = [
